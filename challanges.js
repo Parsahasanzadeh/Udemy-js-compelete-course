@@ -52,3 +52,10 @@ if ((_KoalasAversge > _DolphinsAverage) && (_KoalasAversge >= 100)) {
 } else if ((_KoalasAversge === _DolphinsAverage) || ((_KoalasAversge < _DolphinsAverage) && (_DolphinsAverage <= 100)) ||   ((_KoalasAversge > _DolphinsAverage) && (_KoalasAversge <= 100))) {
     console.log('they are draw');
 }
+
+//Coding Challenge #4
+
+const bill = +prompt('please enter your bill amount');
+const tip = bill <= 300 && bill >= 50 ? 15/100 : 20/100;
+console.log(`The bill was ${bill}, the tip was ${bill * tip}, and the total value 
+${bill + (bill * tip)}`);
